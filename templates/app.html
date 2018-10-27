@@ -1,9 +1,67 @@
-<h1>Team RedShirt App</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Team ReadShirt</title>
+	</head>	
+	<!-- <link href="static/style.css" rel="stylesheet" type="text/css"> -->
+	<style>
+		html, body{
+			margin: 1px; 
+			padding: 1px; 
+			left: 1px; top: 10px; 
+			background-color: #F6BCC1
+		}
+		header{
+   background-color: #BF4680;
+}
+		p, li,td{font:1.6em Arial;
+			color: black;}
+		h1{font: 3em Arial; 
+			color: #FF0000}
+		h2{font: 2.5em Arial; 
+			color: }
+		h3{font: 2em Arial; 
+			color: }
+	</style>
+	<body>
+		<header>
+			<h1>Team RedShirt App</h1>
+		</header>	
 
-<form  action="" method="post" role="form">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="What's your name?">
-    </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-</form>
+				<img src="image/traffic-congestion-sa-474927869.jpg" alt="Image of traffic congestion.">
+				<form  action="" method="post" role="form">
+				   <table>
+
+				    <tr>
+					    <div class="start">
+					    	<td><label for="start location">Current location:</label></td>
+					    	<td><input type="text" class="local-control" id="location" name="location" placeholder="What's your current location?"></td>
+					    </div>
+					</tr>
+
+					<tr>
+						<div class="end">
+							<td><label for="end location">Destination:</label></td>
+							<td><input type="text" class="final-control" id="destination" name="destination" placeholder="Where would you like to go?"></td>
+						</div>	
+					</tr>
+
+					<tr>
+						<div class="date">
+							<td><label for="date">Date:</label></td>
+							<td><input type="date" class="date-control" id="day" name="Date" placeholder="What is the date?"></td>
+						</div>	
+					</tr>	
+
+					<tr>
+						<div class="time">
+							<td><label for="time">Time:</label></td>
+							<td><input type="time" class="time-control" id="timestamp" name="Time" placeholder="What time would you like to travel?">
+						</div>	
+					</tr>	
+				</table>
+				    <button type="submit" class="btn btn-success">Submit</button>	
+				</form>
+	</body> 
+</html>	
+<!--  end location, date, time -->
