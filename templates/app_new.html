@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% from "_formhelpers.html" import render_field %}
+<html>
+	<head>
+		<title>Traffix</title>
+	</head>	
+	<!-- <link href="static/style.css" rel="stylesheet" type="text/css"> -->
+	<style>
+		html, body{
+			margin: 1px; 
+			padding: 1px; 
+			left: 1px; top: 10px; 
+			background-color: #F6BCC1
+		}
+		header{
+   background-color: #BF4680;
+}
+		p, li,td{font:1.6em Arial;
+			color: black;}
+		h1{font: 3em Arial; 
+			color: #FF0000}
+		h2{font: 2.5em Arial; 
+			color: }
+		h3{font: 2em Arial; 
+			color: }
+	</style>
+	<body>
+		<header>
+			<h1>Traf<b>fix</b></h1>
+		</header>	
+
+				<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Chang%27an_avenue_in_Beijing.jpg" alt="Image of traffic congestion." height=300px>
+				<form method=post>
+					<dl>
+					  {{ render_field(form.start) }}
+					  {{ render_field(form.dest) }}
+					  {{ render_field(form.date) }}
+					  {{ render_field(form.time) }}
+					</dl>
+					<p><input type=submit value=Submit>
+				  </form>
+	</body> 
+</html>	
+<!--  end location, date, time -->
